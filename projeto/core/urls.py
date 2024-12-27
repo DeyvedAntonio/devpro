@@ -1,4 +1,4 @@
-from django.contrib import admin
+from django.contrib import admin  # noqa F401
 from django.urls import path
 
 
@@ -9,5 +9,4 @@ app_name = 'core'
 
 urlpatterns = [
     path('', views.home, name='home'),
-
 ]

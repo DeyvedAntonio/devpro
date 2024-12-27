@@ -16,6 +16,7 @@ python-decouple = "^3.8"
 pytest = "^8.3.4"
 pytest-django = "^4.9.0"
 pytest-cov = "^6.0.0"
+ruff = "^0.8.4"
 
 
 [tool.pytest.ini_options]
@@ -26,3 +27,12 @@ python_files = ["test*.py", "*_test.py"]
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+line-length = 79
+exclude = ['./projeto/core/migrations']
+
+
+[tool.ruff.format]
+quote-style = 'single'
