@@ -12,6 +12,16 @@ django = "^5.1.4"
 python-decouple = "^3.8"
 
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-django = "^4.9.0"
+
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "projeto.settings"
+python_files = ["test*.py", "*_test.py"]
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
